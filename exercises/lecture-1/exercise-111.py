@@ -1,0 +1,2 @@
+firstName = "Mustermann"
+lastName = "Max"
