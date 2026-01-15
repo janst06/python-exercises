@@ -1,0 +1,46 @@
+/* @theme python_A4 */
+
+@import 'default';
+
+section {
+  /* A4 document size */
+  width: 210mm;
+  height: 297mm;
+  align-content: start;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 20px;
+}
+
+li {
+  font-size: 20px;
+}
+
+pre {
+  font-size: 15px;  
+}
+
+pre code {
+  font-size: 15px;
+}
+
+section::after {
+  font-size: 15px;
+}

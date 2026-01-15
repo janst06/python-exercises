@@ -13,7 +13,10 @@ while running:
     else:
         print("Das Programm wird nicht ausgeführt.")
 
-# Schleife 3: Endlosschleife, input() gibt immer einen String zurück, keinen Boolean
+# Schleife 3: Endlosschleife, input() gibt immer einen String zurück.
+# In Python wird jeder nicht-leere String als True evaluiert, auch "False".
+# Wird ein leerer String eingegeben, evaluiert running zu False, ...
+# ... aber wird danach wieder auf True gesetzt.
 running = True
 while running:
     running = input("Weitermachen? ")

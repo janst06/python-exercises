@@ -1,6 +1,19 @@
+---
+marp: true
+math: mathjax
+
+title: "Programmieren in Python"
+header: "Programmieren in Python - Vorlesung 2"
+footer: "Duale Hochschule Baden-Württemberg - Vorlesung Programmieren"
+
+theme: python_A4
+paginate: true
+
+---
+
 # Vorlesung 2
 ## Übungsaufgabe 1 - Listen
-### Aufgabe 1
+### Aufgabe 1.1
 ```python
 data = ["abc123", 12, True, 0.25, -3, "J", "N"]
 ```
@@ -19,7 +32,7 @@ data[-1*3]
 data[7-2]  
 ```
 
-### Aufgabe 2
+### Aufgabe 1.2
 ```python
 alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
 ```
@@ -39,7 +52,9 @@ alphabet[-50:50]
 alphabet[: len(alphabet)]
 ```
 
-### Aufgabe 3
+---
+
+### Aufgabe 1.3
 Welche Liste erhalten Sie nach diesen Eingaben?
 ```python
 [0, 1, 2] * 2
@@ -49,7 +64,7 @@ Welche Liste erhalten Sie nach diesen Eingaben?
 2 * ([True] + [True, False])
 ```
 
-### Aufgabe 4
+### Aufgabe 1.4
 ```python
 values = [0, 1, 2, 3, 4, 5]
 ```
@@ -70,7 +85,7 @@ values.remove(values.index(3))
 values.clear()
 ```
 
-### Aufgabe 5
+### Aufgabe 1.5
 Wie lauten die Ausgaben des Programms?
 
 ```python
@@ -81,7 +96,9 @@ print("".join(["F", "l", "o"]))
 print("--".join(["-", "-", "-"]))
 ```
 
-### Aufgabe 6
+---
+
+### Aufgabe 1.6
 ```python
 matrix = [[1, 0, 1],
           [0, 1, 0],
@@ -104,12 +121,12 @@ matrix[2]
 ```
 
 ## Übungsaufgabe 2 - Datenstrukturen
-### Aufgabe 1
+### Aufgabe 2.1
 Was unterschiedet Tupel und Listen voneinander?
 Welche Vorteile bieten Tupel gegenüber Listen?
 
 
-### Aufgabe 2
+### Aufgabe 2.2
 Was wird durch folgendes Programm ausgegeben?
 
 ```python
@@ -126,24 +143,28 @@ print(tupel[index])
 print(5 in copy)
 ```
 
-### Aufgabe 3
+---
+
+### Aufgabe 2.3
 
 ```python
 a = (1,2,3)
 b = (4,5,6)
 ```
 
-Wandeln Sie die beiden Tupel in folgende Liste um: `[1, 2, 3, 4, 5, 6]`
+Wandeln Sie die beiden Tupel in folgende Liste um: 
+```python
+[1, 2, 3, 4, 5, 6]
+```
 
-
-### Aufgabe 4
+### Aufgabe 2.4
 
 Schreiben Sie eine Funktion mit dem Namen `is_in_set()`, die als Parameter eine Variable 
 und ein Set erhält. Die Funktion soll `True` zurückgeben, sollte die Zahl in dem Set
 vorhanden sein.
 
 
-### Aufgabe 5
+### Aufgabe 2.5
 
 Geben Sie an, wie das dictionary nach jeder Zeile aussieht.
 
@@ -159,13 +180,15 @@ values["eins"] = 1
 del values["null"]
 ```
 
-### Aufgabe 6
+### Aufgabe 2.6
 Erstellen Sie eine Liste mit allen Namen und eine zweite Liste mit jedem Alter.
 ```python
 names = {"Florian": 25, "Bertel": 28, "Eva": 51, "Günter": 60}
 ```
 
-### Aufgabe 7
+---
+
+### Aufgabe 2.7
 
 Definieren Sie ein Dictionary mit allen Schulnoten als Schlüssel (1-6). 
 Als Werte soll die jeweilige Note verbalisiert sein (z.B. 1: Sehr gut).
@@ -173,21 +196,21 @@ Als Werte soll die jeweilige Note verbalisiert sein (z.B. 1: Sehr gut).
 Schreiben Sie eine Funktion, die als Input eine Zahl nimmt und als Output die Note als Text ausgibt. Die Funktion muss das Dictionary verwenden.
 
 ## Übungsaufgabe 3 - Kontrollstrukturen
-### Aufgabe 1
+### Aufgabe 3.1
 
 Geben Sie jede zweite Zahl aus der Liste aus.
 ```python
 my_list = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 ```
 
-### Aufgabe 2
+### Aufgabe 3.2
 
 Geben Sie folgende Liste mit Index aus.
 ```python
 names = ["Anna", "Bella", "Charlotte", "Diana", "Erika", "Fiona"]
 ```
 
-### Aufgabe 3
+### Aufgabe 3.3
 
 Schreiben Sie eine Funktion, welche eine zweidimensionale Liste aus Integern erhält. 
 Diese soll mit der folgenden Formatierung ausgegeben werden. Die einzelnen Listen müssen alle gleich lang sein.
@@ -199,7 +222,9 @@ Diese soll mit der folgenden Formatierung ausgegeben werden. Die einzelnen Liste
 2 | 7 8 9
 ```
 
-### Aufgabe 4
+---
+
+### Aufgabe 3.4
 
 Wie viele Ausrufezeichen werden ausgegeben?
 
@@ -211,7 +236,7 @@ for i in range(5):
     print("!")
 ```
 
-### Aufgabe 5
+### Aufgabe 3.5
 
 Welche der Schleifen sind Endlosschleifen?
 
@@ -241,7 +266,9 @@ while running:
     running = True
 ```
 
-### Aufgabe 6
+---
+
+### Aufgabe 3.6
 
 Ersetzen Sie diese while Schleife durch eine for Schleife
 ```python
